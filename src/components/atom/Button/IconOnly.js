@@ -11,7 +11,6 @@ export default function IconOnly({onPress,icon}) {
                 <PreviousLogo/>
             )
         }
-    
         if(icon === 'back-light'){
             return(
                 <Text>Icon putih</Text>
