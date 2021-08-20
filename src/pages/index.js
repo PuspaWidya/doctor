@@ -3,10 +3,15 @@ import GetStarted from './GetStarted'
 import SignIn from './SignIn'
 import SignUp from './SignUp'
 import UploadPhoto from './UploadPhoto' 
-
+import Hospital from './Hospital'
+import Doctor from './Doctor'
+import Messages from './Messages'
 
 export {Splash,
 GetStarted,
 SignIn,
 SignUp,
-UploadPhoto}
+UploadPhoto,
+Messages,
+Doctor,
+Hospital}

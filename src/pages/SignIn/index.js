@@ -6,7 +6,7 @@ import { colors } from '../../utilis/Color'
 import { fonts } from '../../utilis/fonts/fonts'
 
 
-export default function SignIn() {
+export default function SignIn({navigation}) {
     return (
         <View style={styles.logo}>
                 <ILLogo/>
@@ -17,7 +17,7 @@ export default function SignIn() {
                 <Get height={10}/>
                 <Link text={'Forgot My Password'} size={12}/>
                 <Get height={40}/>
-            <ComButton title="Sign In"/>
+            <ComButton title="Sign In" onPress={()=> navigation.replace('MainApp')}/>
                 <Get height={30}/>
                 <Link text={'Create New Account'} size={16} align={'center'}/>
         </View>
