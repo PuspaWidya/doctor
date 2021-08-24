@@ -2,24 +2,24 @@ import React from 'react'
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { GetStarted, Splash,SignIn, SignUp,UploadPhoto, Doctor, Messages, Hospital } from '../pages';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-
+import { ButtomNav } from '../components';
 
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
 
 const MainApp = () =>{
     return(
-        <Tab.Navigator>
-            <Tab.Screen name="Doctor" component={Doctor}/>
-            <Tab.Screen name="Messages" component={Messages}/>
-            <Tab.Screen name="Hospital" component={Hospital}/>
+        <Tab.Navigator tabBar={props => <ButtomNav {...props}/> }>
+            <Tab.Screen name="Doctor" component={Doctor} options={{headerShown:false}}/>
+            <Tab.Screen name="Messages" component={Messages} options={{headerShown:false}}/>
+            <Tab.Screen name="Hospitals" component={Hospital} options={{headerShown:false}}/>
         </Tab.Navigator>
     )
 }
 
 const Router = () =>{
     return(
-        <Stack.Navigator initialRouteName="GetStarted">
+        <Stack.Navigator initialRouteName="MainApp">
 
             <Stack.Screen name="splash" component={Splash}
             options={{headerShown:false}}

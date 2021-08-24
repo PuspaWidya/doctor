@@ -1,6 +1,8 @@
 const mainColor = {
     green1:'#0BCAD4',
+    green2:'#EDFCFD',
     dark1:'#112340',
+    dark2:'#495A75',
     grey1:'#7D8797',
     grey2:'#E9E9E9'
 }
@@ -15,7 +17,8 @@ export const colors = {
     text:{
         primary:mainColor.dark1,
         secondary:mainColor.grey1,
-        white:'white'
+        menuInactive:mainColor.dark2,
+        MenuActive:mainColor.green1
     },
     button:{
         primary:{
@@ -27,5 +30,6 @@ export const colors = {
             text:mainColor.dark1 
         }
     },
-    border:mainColor.grey2
+    border:mainColor.grey2,
+    cardLight:mainColor.green2
 }

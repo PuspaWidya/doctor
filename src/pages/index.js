@@ -6,6 +6,8 @@ import UploadPhoto from './UploadPhoto'
 import Hospital from './Hospital'
 import Doctor from './Doctor'
 import Messages from './Messages'
+import TabItem from './TabItem'
+
 
 export {Splash,
 GetStarted,
@@ -14,4 +16,5 @@ SignUp,
 UploadPhoto,
 Messages,
 Doctor,
-Hospital}
+Hospital,
+TabItem}
